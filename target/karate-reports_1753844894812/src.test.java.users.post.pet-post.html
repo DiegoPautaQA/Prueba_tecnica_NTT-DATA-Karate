@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link rel="stylesheet" href="res/bootstrap.min.css" type="text/css"/>
+    <link rel="stylesheet" href="res/karate-report.css" type="text/css"/>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <script type="text/javascript" src="res/jquery.min.js"></script>
+    <script type="text/javascript" src="res/jquery.tablesorter.min.js"></script>
+    <script type="text/javascript" src="res/bootstrap.min.js"></script>
+    <script type="text/javascript" src="res/karate-report.js"></script>
+    <title>src.test.java.users.post.pet-post</title>  
+  </head>
+  <body>   
+    <div id="root-container">
+      <div id="leftnav">
+                
+        <div>
+  <div class="nav-logo">
+    <a href="karate-summary.html">
+      <img src="karate-logo.svg" alt="Karate"/>
+    </a>
+    <div class="nav-count">
+      <div id="nav-pass" class="bg-success">0</div>
+      <div id="nav-fail" class="bg-danger">1</div>
+    </div>
+  </div>
+  <div id="nav-type">
+    <div>Scenarios</div>
+  </div>         
+  <div id="nav-date">
+    <div>2025-07-29 10:05:01 p. m.</div>
+  </div>        
+</div>
+
+        <div class="nav-container">
+          <div class="nav-item failed">
+            <a href="#[1:2]"><span>[1:2]</span> <span>Add pet</span></a>
+          </div>
+        </div>
+      </div>
+      <div id="content">
+        <div class="page-heading alert alert-primary">
+          <a href="karate-summary.html">Summary</a><span class="feature-label">|</span>
+          <a href="karate-tags.html">Tags</a><span class="feature-label">|</span>
+          <span class="feature-label">Feature:</span>
+          <span class="feature-path">src/test/java/users/post/pet-post.feature</span><span class="feature-label">|</span>
+          <span class="feature-name">Post pet</span>
+          <span class="feature-description"></span>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[1:2]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[1:2]</span>
+                <span class="scenario-name">Add pet</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time failed">
+              <span>ms:</span>&nbsp;<span>1773</span>
+            </div>
+          </div>
+          
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.3">
+      <div class="step-ref passed">3</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url &quot;https://petstore.swagger.io&quot; + &quot;/#/pet/addPet&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">156</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref passed">4</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request</span>
+      </div>
+    </div>
+    <div class="time-cell passed">59</div>
+  </div>
+
+   
+  
+  <div class="preformatted" data-parent="0.4">{
+&quot;id&quot;: 1233334,
+&quot;category&quot;: {
+&quot;id&quot;: 0,
+&quot;name&quot;: &quot;callejero&quot;
+},
+&quot;name&quot;: &quot;bruce&quot;,
+&quot;photoUrls&quot;: [
+&quot;string&quot;
+],
+&quot;tags&quot;: [
+{
+&quot;id&quot;: 1,
+&quot;name&quot;: &quot;bruce&quot;
+}
+],
+&quot;status&quot;: &quot;available&quot;
+}</div>
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.25">
+      <div class="step-ref passed">25</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method post</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1553</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.25">22:05:00.250 request:
+1 &gt; POST https://petstore.swagger.io/#/pet/addPet
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 145
+1 &gt; Host: petstore.swagger.io
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/19.0.2)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;id&quot;:1233334,&quot;category&quot;:{&quot;id&quot;:0,&quot;name&quot;:&quot;callejero&quot;},&quot;name&quot;:&quot;bruce&quot;,&quot;photoUrls&quot;:[&quot;string&quot;],&quot;tags&quot;:[{&quot;id&quot;:1,&quot;name&quot;:&quot;bruce&quot;}],&quot;status&quot;:&quot;available&quot;}
+
+22:05:01.108 response time in milliseconds: 854
+1 &lt; 405
+1 &lt; Date: Wed, 30 Jul 2025 03:05:00 GMT
+1 &lt; Content-Type: text/html
+1 &lt; Content-Length: 150
+1 &lt; Connection: keep-alive
+1 &lt; Server: nginx
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Access-Control-Allow-Methods: GET, POST, OPTIONS
+1 &lt; Access-Control-Allow-Headers: DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type
+1 &lt; X-Frame-Options: DENY
+1 &lt; Content-Security-Policy: frame-ancestors &#39;none&#39;
+&lt;html&gt;
+&lt;head&gt;&lt;title&gt;405 Not Allowed&lt;/title&gt;&lt;/head&gt;
+&lt;body&gt;
+&lt;center&gt;&lt;h1&gt;405 Not Allowed&lt;/h1&gt;&lt;/center&gt;
+&lt;hr&gt;&lt;center&gt;nginx&lt;/center&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.26">
+      <div class="step-ref failed">26</div>
+      
+      <div class="step-cell failed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell failed">5</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.26">22:05:01.119 src/test/java/users/post/pet-post.feature:26
+Then status 200
+status code was: 405, expected: 200, response time in milliseconds: 854, url: https://petstore.swagger.io/#/pet/addPet, response: 
+&lt;html&gt;
+&lt;head&gt;&lt;title&gt;405 Not Allowed&lt;/title&gt;&lt;/head&gt;
+&lt;body&gt;
+&lt;center&gt;&lt;h1&gt;405 Not Allowed&lt;/h1&gt;&lt;/center&gt;
+&lt;hr&gt;&lt;center&gt;nginx&lt;/center&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+
+src/test/java/users/post/pet-post.feature:26
+</div>   
+
+  
+
+</div>
+</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+

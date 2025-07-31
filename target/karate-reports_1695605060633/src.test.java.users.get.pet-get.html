@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link rel="stylesheet" href="res/bootstrap.min.css" type="text/css"/>
+    <link rel="stylesheet" href="res/karate-report.css" type="text/css"/>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <script type="text/javascript" src="res/jquery.min.js"></script>
+    <script type="text/javascript" src="res/jquery.tablesorter.min.js"></script>
+    <script type="text/javascript" src="res/bootstrap.min.js"></script>
+    <script type="text/javascript" src="res/karate-report.js"></script>
+    <title>src.test.java.users.get.pet-get</title>  
+  </head>
+  <body>   
+    <div id="root-container">
+      <div id="leftnav">
+                
+        <div>
+  <div class="nav-logo">
+    <a href="karate-summary.html">
+      <img src="karate-logo.svg" alt="Karate"/>
+    </a>
+    <div class="nav-count">
+      <div id="nav-pass" class="bg-success">0</div>
+      <div id="nav-fail" class="bg-danger">1</div>
+    </div>
+  </div>
+  <div id="nav-type">
+    <div>Scenarios</div>
+  </div>         
+  <div id="nav-date">
+    <div>2023-09-24 08:15:25 PM</div>
+  </div>        
+</div>
+
+        <div class="nav-container">
+          <div class="nav-item failed">
+            <a href="#[2:7]"><span>[2:7]</span> <span>Consult by status</span></a>
+          </div>
+        </div>
+      </div>
+      <div id="content">
+        <div class="page-heading alert alert-primary">
+          <a href="karate-summary.html">Summary</a><span class="feature-label">|</span>
+          <a href="karate-tags.html">Tags</a><span class="feature-label">|</span>
+          <span class="feature-label">Feature:</span>
+          <span class="feature-path">src/test/java/users/get/pet-get.feature</span><span class="feature-label">|</span>
+          <span class="feature-name">Get pet</span>
+          <span class="feature-description"></span>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[2:7]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[2:7]</span>
+                <span class="scenario-name">Consult by status</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time failed">
+              <span>ms:</span>&nbsp;<span>1518</span>
+            </div>
+          </div>
+          
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.8">
+      <div class="step-ref passed">8</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url &quot;https://petstore.swagger.io&quot; + &quot;/#/pet/findPetsByStatus&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">130</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.9">
+      <div class="step-ref passed">9</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method get</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1282</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.9">20:15:24.258 request:
+1 &gt; GET https://petstore.swagger.io/#/pet/findPetsByStatus
+1 &gt; Host: petstore.swagger.io
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/19.0.2)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+20:15:25.144 response time in milliseconds: 878
+1 &lt; 200
+1 &lt; Date: Mon, 25 Sep 2023 01:15:25 GMT
+1 &lt; Content-Type: text/html
+1 &lt; Connection: keep-alive
+1 &lt; Server: nginx
+1 &lt; Last-Modified: Wed, 20 Sep 2023 16:41:04 GMT
+1 &lt; Vary: Accept-Encoding
+1 &lt; ETag: &quot;650b20a0-147&quot;
+1 &lt; Expires: Tue, 26 Sep 2023 01:15:25 GMT
+1 &lt; Cache-Control: max-age=86400
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Access-Control-Allow-Methods: GET, POST, OPTIONS
+1 &lt; Access-Control-Allow-Headers: DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type
+1 &lt; Accept-Ranges: bytes
+&lt;!-- HTML for static distribution bundle build --&gt;
+&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+  &lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot;&gt;
+    &lt;title&gt;Swagger UI&lt;/title&gt;
+    &lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;./swagger-ui.css&quot; /&gt;
+    &lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;index.css&quot; /&gt;
+    &lt;link rel=&quot;icon&quot; type=&quot;image/png&quot; href=&quot;./favicon-32x32.png&quot; sizes=&quot;32x32&quot; /&gt;
+    &lt;link rel=&quot;icon&quot; type=&quot;image/png&quot; href=&quot;./favicon-16x16.png&quot; sizes=&quot;16x16&quot; /&gt;
+  &lt;/head&gt;
+
+  &lt;body&gt;
+    &lt;div id=&quot;swagger-ui&quot;&gt;&lt;/div&gt;
+    &lt;script src=&quot;./swagger-ui-bundle.js&quot; charset=&quot;UTF-8&quot;&gt; &lt;/script&gt;
+    &lt;script src=&quot;./swagger-ui-standalone-preset.js&quot; charset=&quot;UTF-8&quot;&gt; &lt;/script&gt;
+    &lt;script src=&quot;./swagger-initializer.js&quot; charset=&quot;UTF-8&quot;&gt; &lt;/script&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.10">
+      <div class="step-ref passed">10</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">8</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.11">
+      <div class="step-ref failed">11</div>
+      
+      <div class="step-cell failed">
+        <span>And</span>&nbsp;<span>match $ contains &#39;sold&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell failed">98</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.11">20:15:25.255 src/test/java/users/get/pet-get.feature:11
+And match $ contains &#39;sold&#39;
+match failed: CONTAINS
+  $ | actual does not contain expected (STRING:STRING)
+  &#39;&lt;!-- HTML for static distribution bundle build --&gt;
+&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+  &lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot;&gt;
+    &lt;title&gt;Swagger UI&lt;/title&gt;
+    &lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;./swagger-ui.css&quot; /&gt;
+    &lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;index.css&quot; /&gt;
+    &lt;link rel=&quot;icon&quot; type=&quot;image/png&quot; href=&quot;./favicon-32x32.png&quot; sizes=&quot;32x32&quot; /&gt;
+    &lt;link rel=&quot;icon&quot; type=&quot;image/png&quot; href=&quot;./favicon-16x16.png&quot; sizes=&quot;16x16&quot; /&gt;
+  &lt;/head&gt;
+
+  &lt;body&gt;
+    &lt;div id=&quot;swagger-ui&quot;&gt;&lt;/div&gt;
+    &lt;script src=&quot;./swagger-ui-bundle.js&quot; charset=&quot;UTF-8&quot;&gt; &lt;/script&gt;
+    &lt;script src=&quot;./swagger-ui-standalone-preset.js&quot; charset=&quot;UTF-8&quot;&gt; &lt;/script&gt;
+    &lt;script src=&quot;./swagger-initializer.js&quot; charset=&quot;UTF-8&quot;&gt; &lt;/script&gt;
+  &lt;/body&gt;
+&lt;/html&gt;&#39;
+  &#39;sold&#39;
+
+src/test/java/users/get/pet-get.feature:11
+</div>   
+
+  
+
+</div>
+</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+
