@@ -1,0 +1,23 @@
+Escenario probado:
+
+Se ejecutaron 1000 solicitudes HTTP bajo condiciones controladas para evaluar la capacidad de respuesta y rendimiento del sistema.
+Principales métricas:
+| Métrica | Valor | Observación | 
+| Tiempo Promedio | 309 ms | tiempo de respuesta menor a los 1,5 segundos estable y dentro de rangos aceptables. | 
+| Tiempo Mín / Máx | 289 ms / 712 ms | Picos ocasionales; posible variabilidad puntual. | 
+| Desviación Estándar | 25.38 ms | Variabilidad leve; sistema mayormente consistente. | 
+| Porcentaje de Error | 0.00% | Excelente: todas las solicitudes fueron exitosas. | 
+| Throughput | 28.8 req/seg | TPS Cumple con lo solicitado > a los 20 TPS  
+| Transferencia Recibida | 25.11 KB/seg | Flujo constante y sin cuellos de botella aparentes. | 
+| Transferencia Enviada | 6.70 KB/seg | Correcta emisión de datos por parte del cliente. | 
+| Tamaño Prom. de Respuesta | 891.5 bytes | Indicativo de eficiencia en el tamaño de carga. | 
+
+
+
+Conclusiones:
+- El sistema demostró estabilidad y eficiencia, manejando 1000 solicitudes sin fallos ni latencia excesiva.
+- La desviación estándar sugiere que el rendimiento fue homogéneo, sin grandes fluctuaciones.
+- La infraestructura actual parece adecuada para soportar este nivel de tráfico.
+- Pruebas con mayor carga concurrente.
+- Evaluación de rendimiento ante datos más pesados o escenarios con lógica compleja.
+- Se recomienda mantener esta métrica como linea base para futuras iteraciones comparativas.
